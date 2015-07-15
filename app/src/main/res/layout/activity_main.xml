@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+ <!--   android:background="@drawable/bg"-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="图灵机器人"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="#bbada0"/>
+    <ListView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:transcriptMode="alwaysScroll"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"/>
+
+    <LinearLayout
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottom_layout">
+
+        <EditText
+            android:padding="3dp"
+            android:gravity="center_vertical"
+            android:id="@+id/id_sendtx"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_edit"/>
+        <Button
+            android:layout_marginLeft="8dp"
+            android:id="@+id/id_sendbt"
+            android:layout_width="70dp"
+            android:layout_height="fill_parent"
+            android:text="@string/send"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:background="@drawable/bt_start"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
